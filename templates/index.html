@@ -1,0 +1,41 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block styles %}
+{{ super() }}
+	<style>
+		body { background: #e8f1f9; }
+	</style>
+
+  <style type="text/css">
+        #textfield {
+            height: 444px;
+        }
+    </style>
+{% endblock %}
+
+
+{% block title %}
+Tags Overflow
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-lg-auto mx-md-auto">
+
+      <h1 class="pt-5 pb-2">Welcome to Tags Overflow!</h1>
+
+      <p class="lead">Type or paste your question in the the field below and wait for the algorithm to propose tags associated with the question!</p>
+
+      {{ wtf.quick_form(form) }}
+
+      <p class="pt-5"><strong>{{ message }}</strong></p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
