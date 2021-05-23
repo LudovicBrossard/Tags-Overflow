@@ -18,9 +18,9 @@ with 1000 different tags to predict.
 ## Installation
 
 - To run the application, first download the entire repository. If you are cloning the repository with git, 
-you will have to use git LFS (Large File Storage)  as one of the file is above 100 MB. 
+you will have to use git LFS (Large File Storage)  as one of the file is above 100 MB. In both cases, make sure that the _classifier.pkl_ file is properly downloaded (around 230 MB).
 - Once downloaded, it is recommended to create and activate a virtual environment using Python `venv`. 
-On Windows, inside the repository on your computer, use the command:
+On Windows, inside the repository you just downloaded, use the command:
     ```
     python -m venv env
     .\env\Scripts\activate
@@ -29,7 +29,7 @@ On Windows, inside the repository on your computer, use the command:
     ```
     pip install -r requirements.txt
     ```
-- You can finally run the application using:
+- You can finally run the application. Note that you may need admin rights to do so (otherwise some DLL loading error may be returned).
     ```
     python api.py
     ```
