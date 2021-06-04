@@ -1,6 +1,8 @@
 # Tags-Overflow
 ## _The Stack Overflow Tag Predictor_
 
+![Alt Image text](/flask_app.png?raw=true "Tags-Overflow screenshot")
+
 Tags-Overflow is a Python-3 Flask API that runs locally on your computer. 
 Once started, you have to navigate to __localhost:5000__ (__127.0.0.1:5000__) with your web browser. 
 A web interface will be displayed asking to enter a question.
